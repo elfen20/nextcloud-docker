@@ -1,0 +1,8 @@
+services:
+  client:
+    build: .
+    env_file:
+      - nextcloud.env
+    volumes:
+      - ./nextcloud:/nextcloud
+      - ./config:/config
